@@ -1,0 +1,35 @@
+docker build -t nsioo/homestead:latest /root/docker_image/nsioo
+
+
+docker  tag f39ee101c105 nsioo/homestead:latest
+
+
+
+#docker tag 8a50f7736799 liefliu/docker-whale:latest 
+docker login
+docker push liefliu/docker-whale
+
+systemctl enable cron.service
+
+
+
+docker exec -it root_web_1 /bin/bash
+
+usermod -p $(echo ^paitang475869# | openssl passwd -1 -stdin) homestead
+
+
+
+
+http://bbs.qcloud.com/thread-7704-1-1.html
+
+
+
+docker stop root_web_1 && docker rm root_web_1
+
+docker image rm -f 6a448e6e7c3c
+
+
+
+
+http://www.cnblogs.com/51kata/p/5260727.html	docker cmd命令的解释s
+https://segmentfault.com/q/1010000006107849
